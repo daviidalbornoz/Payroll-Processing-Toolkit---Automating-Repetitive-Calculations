@@ -38,3 +38,14 @@ function processPayroll(employee) {
         netPay: netPay.toFixed(2)
     }
 }
+
+for (const employee of employees) {
+    let payroll = processPayroll(employee)
+    console.log (
+        `Employee: ${payroll.name}
+        Base Pay: $${payroll.basePay}
+        Overtime Pay: $${payroll.overtimePay}
+        Gross Pay: $${payroll.grossPay}
+        Net Pay: $${payroll.netPay}
+        `)
+}
